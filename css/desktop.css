@@ -1,0 +1,8 @@
+/* Larger screens */
+
+#header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: .5rem;
+}
