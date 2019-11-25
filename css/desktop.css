@@ -1,8 +1,14 @@
 /* Larger screens */
 
+/* Header */
 #header {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   padding: .5rem;
 }
+
+/* Intro Section */
+#intro-container { margin-top: 60px; }
+
+#intro-container .intro-content { max-width: 700px; }

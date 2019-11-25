@@ -14,7 +14,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.4;
-  background: #e0f9e4;
+  /* background: #e0f9e4; */
   color: #333;
 }
 
@@ -23,10 +23,18 @@ a {
   color: #333;
 }
 
+.current {
+  border-bottom: 2px solid #765285;
+}
+
 h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 10px 0;
   text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 img { width: 100%; }
@@ -50,6 +58,7 @@ ul { list-style: none;}
 }
 
 #header h1 {
+  font-size: 2.2rem;
   font-weight: 800;
 }
 
@@ -62,25 +71,53 @@ ul { list-style: none;}
 #header .navbar-container ul li { padding: .5rem 1rem; }
 
 /* Intro Section */
-#intro-container {
-  /* text-align: center; */
-  height: 50vh;
+#intro-container { 
+  height: 50vh; 
+  margin-top: 82px;
+  text-align: center;
+  background: #feb47b;
 }
 
 #intro-container .intro-content { 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   height: 100%;
-  max-width: 600px;
+  max-width: 370px;
   text-align: center;
+  margin: 0 auto;
+}
+
+#intro-container .intro-content .learn-more-link {
+  align-self: center;
+  margin: .5rem auto;
+  padding: .5rem;
+  border-radius: 5px;
+  background: #765285;
+  color: #fff;
 }
 
 /* Post Section */
-#post-container { background: #849974; }
+#post-container { background: #ff7e5f; }
 
-.post-card { background: #fff; }
+#post-container .post-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(1, fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.post-card { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  background: #fff; 
+}
 
 /* Footer */
 #footer { background: #fff; }
