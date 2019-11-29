@@ -9,7 +9,8 @@
   <meta name="keywords" content="JRS Coding School, blog, night class, evenings">
   <!-- My stylesheets -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" media="screen and (min-width: 620px)" href="css/desktop.css">
+  <link rel="stylesheet" media="screen and (min-width: 668px)" href="css/tablet.css">
+  <link rel="stylesheet" media="screen and (min-width: 892px)" href="css/desktop.css">
   <title>In the Loop</title>
 </head>
 
@@ -19,9 +20,10 @@
     <h1>In the Loop</h1>
     <nav class="navbar-container">
       <ul>
-        <li><a class="current" href="#home">Home</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="admin.html" class="sign-in-link">Sign In</a></li>
       </ul>
     </nav>
   </header>
@@ -37,52 +39,63 @@
   </section>
 
   <!-- Post Section -->
-  <main id="post-container">
-    <h2>Blog Posts</h2>
-    <div class="post-list">
-      <!-- Newest post placed on top -->
-      <article class="post-card">
-        <h3><a href="#">Post 6 Title</a></h3>
-        <p>2019-11-23</p>
-        <a href="#" class="read-more-link">Read More</a>
-      </article>
-
-      <article class="post-card">
-        <h3><a href="#">Post 5 Title</a></h3>
-        <p>2019-11-23</p>
-        <a href="#" class="read-more-link">Read More</a>
-      </article>
-
-      <article class="post-card">
-        <h3><a href="#">Post 4 Title</a></h3>
-        <p>2019-11-23</p>
-        <a href="#" class="read-more-link">Read More</a>
-      </article>
-
-      <article class="post-card">
-        <h3><a href="#">Post 3 Title</a></h3>
-        <p>2019-11-23</p>
-        <a href="#" class="read-more-link">Read More</a>
-      </article>
-
-      <article class="post-card">
-        <h3><a href="#">Post 2 Title</a></h3>
-        <p>2019-11-23</p>
-        <a href="#" class="read-more-link">Read More</a>
-      </article>
-
-      <article class="post-card">
-        <h3><a href="#">Post 1 Title</a></h3>
-        <p>2019-11-23</p>
-        <a href="#" class="read-more-link">Read More</a>
-      </article>
+  <main id="main-container">
+    <div id="post-area">
+      <h2>Blog Posts</h2>
+      <section class="post-list">
+        <!-- Newest post placed on top -->
+        <article class="post-card">
+          <h3><a href="#">Current Post Lorem, ipsum dolor.</a></h3>
+          <p>2019-11-23</p>
+          <a href="#" class="read-more-link">Read More</a>
+        </article>
+        <article class="post-card">
+          <h3><a href="#">Post 5 Lorem, ipsum.</a></h3>
+          <p>2019-11-23</p>
+          <a href="#" class="read-more-link">Read More</a>
+        </article>
+        <article class="post-card">
+          <h3><a href="#">Post 4 Lorem, ipsum dolor.</a></h3>
+          <p>2019-11-23</p>
+          <a href="#" class="read-more-link">Read More</a>
+        </article>
+        <article class="post-card">
+          <h3><a href="#">Post 3 Lorem ipsum dolor sit amet consectetur.</a></h3>
+          <p>2019-11-23</p>
+          <a href="#" class="read-more-link">Read More</a>
+        </article>
+        <article class="post-card">
+          <h3><a href="#">Post 2 lorem</a></h3>
+          <p>2019-11-23</p>
+          <a href="#" class="read-more-link">Read More</a>
+        </article>
+        <article class="post-card">
+          <h3><a href="#">Post 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <p>2019-11-23</p>
+          <a href="#" class="read-more-link">Read More</a>
+        </article>
+      </section>
     </div>
+    <!-- Aside Section -->
+    <aside id="sign-up">
+      <h2>Stay in the Loop</h2>
+      <input type="email" name="email" placeholder="Enter email address">
+      <button class="sign-up-btn">Sign Up</button>
+    </aside>
   </main>
+
   <!-- Footer -->
   <footer id="footer">
-    <p>Created by Janita Madramootoo &copy; 2019</p>
+    <p>Created by Janita Madramootoo 2019</p>
+    <ul class="social">
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
   </footer>
 
+  <script src="https://kit.fontawesome.com/a48ed8815d.js"></script>
 </body>
 
 </html>

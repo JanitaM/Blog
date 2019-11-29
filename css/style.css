@@ -3,6 +3,14 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
 
+
+:root {
+  /* --main-color: #ff7e5f; */
+  --main-color: #ff7e5f;
+  --secondary-color: #feb47b;
+  --highlight-color: #765285;
+
+}
 /* General */
 * {
   margin: 0;
@@ -13,8 +21,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  font-size: 1.2rem;
   line-height: 1.4;
-  /* background: #e0f9e4; */
   color: #333;
 }
 
@@ -23,23 +31,30 @@ a {
   color: #333;
 }
 
-.current {
-  border-bottom: 2px solid #765285;
-}
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+.navbar-container ul li a:hover { border-bottom: 2px solid var(--highlight-color); }
+
+.current { border-bottom: 2px solid var(--highlight-color); }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
   text-align: center;
 }
 
-h3 {
-  font-size: 1rem;
-}
+h3 { font-size: 1.2rem; }
 
 img { width: 100%; }
 
-ul { list-style: none;}
+ul { list-style: none; }
 
 /* Header */
 #header {
@@ -50,11 +65,11 @@ ul { list-style: none;}
   margin: 0 auto;
   padding: 0 1.5rem;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
-  background: #fff;;
+  background: rgba(248,248,255, 0.95);
 }
 
 #header h1 {
@@ -66,16 +81,28 @@ ul { list-style: none;}
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: .5rem;
 }
 
 #header .navbar-container ul li { padding: .5rem 1rem; }
 
+#header .navbar-container .sign-in-link {
+  background: #483352;
+  color: #fff;
+  padding: .3rem;
+  border-radius: 5px;
+}
+
+#header .navbar-container .sign-in-link:hover {
+  background: var(--highlight-color);
+  border-bottom: none;
+}
+
 /* Intro Section */
 #intro-container { 
   height: 50vh; 
-  margin-top: 82px;
   text-align: center;
-  background: #feb47b;
+  background: var(--secondary-color);
 }
 
 #intro-container .intro-content { 
@@ -91,33 +118,87 @@ ul { list-style: none;}
 
 #intro-container .intro-content .learn-more-link {
   align-self: center;
-  margin: .5rem auto;
+  margin: 1rem auto;
   padding: .5rem;
   border-radius: 5px;
-  background: #765285;
+  background: var(--highlight-color);
   color: #fff;
 }
 
 /* Post Section */
-#post-container { background: #ff7e5f; }
-
-#post-container .post-list {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-rows: repeat(1, fr);
-  justify-items: center;
-  align-items: center;
+#main-container { 
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--main-color); 
+  padding: 1rem;
+  overflow: hidden;
 }
 
-.post-card { 
+#post-area .post-list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+  align-content: center;
+}
+
+/* Content will dictate container size */
+#post-area .post-list .post-card { 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 250px;
-  width: 250px;
+  padding: 2rem;
   background: #fff; 
+  border: 3px solid var(--highlight-color);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#post-area .post-list .post-card:hover { 
+background: #E6E6E6;
+}
+
+/* Sign Up Section */
+#sign-up {
+  background: #fff;
+  border: 2px solid var(--highlight-color);
+  border-radius: 5px;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+#sign-up input {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+  border:1px solid var(--highlight-color);
+  border-radius: 5px;
+}
+
+#sign-up .sign-up-btn {
+  background: #1EB382;
+  color: #fff;
+  border: 1px solid var(--highlight-color);
+  width: 60%;
+  margin: 10px 0;
 }
 
 /* Footer */
-#footer { background: #fff; }
+#footer { 
+  background: rgba(248,248,255, 1); 
+  text-align: center;
+  padding: .5rem 0;
+}
+
+#footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+#footer .social li { padding: 0 .5rem; }
