@@ -133,7 +133,7 @@ ul { list-style: none; }
   justify-content: center;
   align-content: center;
   height: 100%;
-  max-width: 370px;
+  max-width: 360px;
   text-align: center;
   margin: 0 auto;
 }
@@ -183,6 +183,14 @@ ul { list-style: none; }
 
 #post-area .post-list .post-card:hover { background: #E6E6E6; }
 
+/* Aside Container */
+#aside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Sign Up Section */
 #sign-up {
   background: #fff;
@@ -226,7 +234,11 @@ ul { list-style: none; }
 
 #sign-up-bar .sign-up-group { 
   flex: 1;
-  text-align: center; }
+  text-align: center; 
+}
+
+  /* Link Section */
+#link-container { display: none; }
 
 /* Blog Section */
 #blog-container .blog-articles {
@@ -259,9 +271,10 @@ ul { list-style: none; }
 }
 
 #about-image-container .about-image img {
-  width: 350px;
+  min-width: 350px;
   border: 5px solid var(--highlight-color);
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 /* About Text Section */

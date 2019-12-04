@@ -10,6 +10,9 @@
   grid-row: 1/2;
 }
 
+/* Aside Container */
+#main-container { align-items: flex-start; }
+
 /* Blog Section */
 #blog-container .blog-articles .blog-card .left {
   max-width: 30%;
