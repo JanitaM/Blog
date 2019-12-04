@@ -14,7 +14,7 @@
 /* Intro Section */
 #intro-container { height: 40vh; }
 
-#intro-container .intro-content { max-width: 580px; }
+#intro-container .intro-content { max-width: 600px; }
 
 /* Post Container */
 #main-container { 
@@ -73,6 +73,11 @@
 }
 
 #blog-container .blog-articles .blog-card p { padding: 0 .5rem .5rem .5rem; }
+
+/* About Section */
+#about-image-container .about-image img {
+  width: 400px;
+}
 
 /* Contact Section */
 #contact { max-width: 500px; }
